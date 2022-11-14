@@ -21,6 +21,42 @@ namespace backend.Controllers
             _config = config;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<List<Student_Subject>>> GetStudentSubjectList()
+        {
+            try
+            {
+                var query = "SELECT * FROM studentsubjects";
+                using (var connection = new NpgsqlConnection(_config.GetConnectionString("ConnectionString")))
+                {
+                    var result = await connection.QueryAsync<Student_Subject>(query);
+                    return result.ToList();
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<Student_Subject>>> GetStudentWithSubject(int id)
+        {
+            try
+            {
+                var query = "SELECT * FROM studentsubjects WHERE studentid = @id";
+                using (var connection = new NpgsqlConnection(_config.GetConnectionString("ConnectionString")))
+                {
+                    var result = await connection.QueryAsync<Student_Subject>(query, new{id});
+                    return result.ToList();    
+                }
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
         [HttpPost]
         public async Task<ActionResult<int>> AddStudentSubject(StudentSubjectVM studentsubject)
         {

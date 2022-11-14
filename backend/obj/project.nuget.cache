@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mC2cHNPVtH0U1Ah/mUCTWun2ku8cGerawjhK5uGqm3AeRAKAmhXsbWuPgCSVrG/IGcxQgk8avxHBai8/BONBkg==",
+  "dgSpecHash": "tZybRAEQCEgi0uAHmQx12P5+5nZ6VC5jhvLv7GZNcZeAoE0QBCB9Kg6YaEGVCotWCmgSqML/guLWCQVPg3d/Mg==",
   "success": true,
-  "projectFilePath": "/home/pjsth777/Documents/projects/project_nov09/backendDapper/backend/backend.csproj",
+  "projectFilePath": "/home/pjsth777/Documents/projects/project_nov09/projectWithDapper/backend/backend.csproj",
   "expectedPackageFiles": [
     "/home/pjsth777/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/home/pjsth777/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",

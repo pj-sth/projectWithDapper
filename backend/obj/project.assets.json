@@ -1072,11 +1072,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/pjsth777/Documents/projects/project_nov09/backendDapper/backend/backend.csproj",
+      "projectUniqueName": "/home/pjsth777/Documents/projects/project_nov09/projectWithDapper/backend/backend.csproj",
       "projectName": "backend",
-      "projectPath": "/home/pjsth777/Documents/projects/project_nov09/backendDapper/backend/backend.csproj",
+      "projectPath": "/home/pjsth777/Documents/projects/project_nov09/projectWithDapper/backend/backend.csproj",
       "packagesPath": "/home/pjsth777/.nuget/packages/",
-      "outputPath": "/home/pjsth777/Documents/projects/project_nov09/backendDapper/backend/obj/",
+      "outputPath": "/home/pjsth777/Documents/projects/project_nov09/projectWithDapper/backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/pjsth777/.nuget/NuGet/NuGet.Config"
