@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/pjsth777/Documents/projects/project_nov09/backend/backend.csproj": {}
+    "/home/pjsth777/Documents/projects/project_nov09/backendDapper/backend/backend.csproj": {}
   },
   "projects": {
-    "/home/pjsth777/Documents/projects/project_nov09/backend/backend.csproj": {
+    "/home/pjsth777/Documents/projects/project_nov09/backendDapper/backend/backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pjsth777/Documents/projects/project_nov09/backend/backend.csproj",
+        "projectUniqueName": "/home/pjsth777/Documents/projects/project_nov09/backendDapper/backend/backend.csproj",
         "projectName": "backend",
-        "projectPath": "/home/pjsth777/Documents/projects/project_nov09/backend/backend.csproj",
+        "projectPath": "/home/pjsth777/Documents/projects/project_nov09/backendDapper/backend/backend.csproj",
         "packagesPath": "/home/pjsth777/.nuget/packages/",
-        "outputPath": "/home/pjsth777/Documents/projects/project_nov09/backend/obj/",
+        "outputPath": "/home/pjsth777/Documents/projects/project_nov09/backendDapper/backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/pjsth777/.nuget/NuGet/NuGet.Config"

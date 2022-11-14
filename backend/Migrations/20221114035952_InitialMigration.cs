@@ -39,14 +39,14 @@ namespace backend.Migrations
                 name: "studentsubjects",
                 columns: table => new
                 {
-                    studentsubjectId = table.Column<int>(type: "integer", nullable: false)
+                    studentsubjectid = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     studentid = table.Column<int>(type: "integer", nullable: false),
                     subjectid = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_studentsubjects", x => x.studentsubjectId);
+                    table.PrimaryKey("PK_studentsubjects", x => x.studentsubjectid);
                     table.ForeignKey(
                         name: "FK_studentsubjects_students_studentid",
                         column: x => x.studentid,

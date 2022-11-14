@@ -11,7 +11,7 @@ using backend.Data;
 namespace backend.Migrations
 {
     [DbContext(typeof(SchoolDbContext))]
-    [Migration("20221113080104_InitialMigration")]
+    [Migration("20221114035952_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,11 +42,11 @@ namespace backend.Migrations
 
             modelBuilder.Entity("backend.Data.Models.Student_Subject", b =>
                 {
-                    b.Property<int>("studentsubjectId")
+                    b.Property<int>("studentsubjectid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("studentsubjectId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("studentsubjectid"));
 
                     b.Property<int>("studentid")
                         .HasColumnType("integer");
@@ -54,7 +54,7 @@ namespace backend.Migrations
                     b.Property<int>("subjectid")
                         .HasColumnType("integer");
 
-                    b.HasKey("studentsubjectId");
+                    b.HasKey("studentsubjectid");
 
                     b.HasIndex("studentid");
 
@@ -83,13 +83,13 @@ namespace backend.Migrations
             modelBuilder.Entity("backend.Data.Models.Student_Subject", b =>
                 {
                     b.HasOne("backend.Data.Models.Student", "student")
-                        .WithMany("studentsubject")
+                        .WithMany()
                         .HasForeignKey("studentid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("backend.Data.Models.Subject", "subject")
-                        .WithMany("studentsubject")
+                        .WithMany()
                         .HasForeignKey("subjectid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -97,16 +97,6 @@ namespace backend.Migrations
                     b.Navigation("student");
 
                     b.Navigation("subject");
-                });
-
-            modelBuilder.Entity("backend.Data.Models.Student", b =>
-                {
-                    b.Navigation("studentsubject");
-                });
-
-            modelBuilder.Entity("backend.Data.Models.Subject", b =>
-                {
-                    b.Navigation("studentsubject");
                 });
 #pragma warning restore 612, 618
         }

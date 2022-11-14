@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace backend.Data.ViewModels
 {
-    public class StudentVM
+    public class StudentSubjectVM
     {
-        public string studentname { get; set; }
-
+        public int studentid { get; set; }
+        public List<int> subjectids { get; set; }
     }
 }

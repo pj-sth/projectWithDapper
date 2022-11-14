@@ -11,8 +11,7 @@ namespace backend.Data.Models
         [Key]
         public int subjectid { get; set; }
         public string subjectname { get; set; }
-                // Navigation Property
-        public List<Student_Subject> studentsubject { get; set; }
+        
     }
     // Create student with subjects
 }

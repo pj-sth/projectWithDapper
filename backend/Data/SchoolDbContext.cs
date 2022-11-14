@@ -14,18 +14,6 @@ namespace backend.Data
 
         } 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Student_Subject>()
-                .HasOne(s => s.student)
-                .WithMany(ss => ss.studentsubject)
-                .HasForeignKey(si => si.studentid);
-
-            modelBuilder.Entity<Student_Subject>()
-                .HasOne(s => s.subject)
-                .WithMany(ss => ss.studentsubject)
-                .HasForeignKey(si => si.subjectid);
-        }
         public DbSet<Student> students { get; set; }
         public DbSet<Subject> subjects { get; set; }
         public DbSet<Student_Subject> studentsubjects { get; set; }
