@@ -7,9 +7,7 @@ const AddStudentModal = () => {
 
     const [students, setStudents] = useState([]);
     const [subjects, setSubjects] = useState([]);
-    // const [subjectList, setSubjectList] = useState([]);
-    // const [studentSubject, setStudentSubject] = useState([]);
-    // const [subject, setSubject] = useState("");
+    
   
     useEffect(() => {
         axios.get("https://localhost:7139/api/Student").then((response) => {
@@ -42,36 +40,6 @@ const AddStudentModal = () => {
         },
         onSubmit
     })
-  
-    // const handleChange = (event) => {
-    //   axios
-    //     .get(`https://localhost:7139/api/StudentSubject/${event.target.value}`)
-    //     .then((response) => {
-    //       setStudent((data) => {
-    //         return response.data;
-    //       });
-    //     });
-    // };
-  
-    // useEffect(() => {
-    //   student.map((std) => {
-    //     setSubjects((prev) => [...prev, std.subjectid]);
-    //   })
-    // }, [student]);
-  
-  
-    // useEffect(() => {
-    //   for (var i = 0; i < subjects.length; i++)
-    //   {
-    //     subjectList.map((subject) => {
-    //       if (subject.subjectid === subjects[i])
-    //       {
-    //         setStudentSubject((prev) => [...prev, subject.subjectname]);
-    //       }
-    //     })
-    //   }
-  
-    // }, [subjects])
 
   return (
     <>

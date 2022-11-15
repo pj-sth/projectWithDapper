@@ -339,4 +339,22 @@
   border-radius: 10px;
 }
 
+.saveDiv {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.resultSubmit {
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color:green;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  margin-right: 0px;
+  float: right;
+}
+
 /* Ending */
