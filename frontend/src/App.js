@@ -1,10 +1,12 @@
-import AddStudentModal from './pages/AddStudentModal';
-import Form from './pages/Form';
+import Navbar from './component/Navbar/Navbar';
+import AddStudentModal from './pages/AddStudent/AddStudentModal';
+import Form from './pages/Form/Form';
 
 const App = () => {
   
   return (
     <>
+      <Navbar />
       <div className='container'>
         <Form />
       </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Modal.css";
 
 const Modal = ({ student, studentList, setStudentList, setModal }) => {
   const [studentData, setStudentData] = useState({

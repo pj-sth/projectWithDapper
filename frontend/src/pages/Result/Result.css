@@ -1,0 +1,65 @@
+.result {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .result {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  
+  .result th, td {
+    padding: 10px;
+    width: 25%;
+  }
+  
+  .tableHead {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .buttons button {
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .edit, .delete {
+    color: white;
+    border: transparent;
+    border-radius: 7px;
+    font-weight: 600;
+  }
+  
+  .edit {
+    background-color: blue;
+  }
+  
+  .delete {
+    background-color: red;
+  }
+
+  .saveDiv {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .resultSubmit {
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color:green;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-right: 0px;
+    float: right;
+  }
+  

@@ -1,0 +1,81 @@
+.addStudentModal {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.855);
+  }
+  
+  
+  .addStudentModalContent {
+    width: 55%;
+    height: 55%;
+    background-color: white;
+    position: relative;
+    border-radius: 5%;
+    box-shadow: 0px 0px 49px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 49px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 49px 0px rgba(0,0,0,0.75);
+    padding: 20px;
+  }
+
+  .studentSubjectForm {
+    padding: 40px;
+    border-radius: 5%;
+    padding-bottom: 60px;
+    background-color: rgb(228, 228, 228);
+  }
+
+
+.studentName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .studentName select {
+    margin-left: 25px;
+    padding: 10px;
+    width: 63%;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: white;
+  }
+  
+  .studentName input:focus, .studentName textarea:focus {
+    border: 1px solid green !important;
+  }
+  
+  .subjectName {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    margin-right: 0;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .subjectName select {
+    margin-left: 25px;
+    padding: 10px;
+    width: 63%;
+    border-radius: 10px;
+    border: 1px solid transparent;
+  }
+
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }

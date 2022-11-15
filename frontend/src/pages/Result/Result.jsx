@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
-import Modal from "../component/Modal";
+import Modal from "../../component/Modal/Modal";
+import "./Result.css";
 
 const Result = ({ studentList, setStudentList }) => {
   const [modal, setModal] = useState(false);

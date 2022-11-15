@@ -1,0 +1,63 @@
+.form {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 8px 30px 31px -16px rgba(92, 85, 85, 0.75);
+  -webkit-box-shadow: 8px 30px 31px -16px rgba(92, 85, 85, 0.75);
+  -moz-box-shadow: 8px 30px 31px -16px rgba(92, 85, 85, 0.75);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.form {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 8px 30px 31px -16px rgba(92, 85, 85, 0.75);
+  -webkit-box-shadow: 8px 30px 31px -16px rgba(92, 85, 85, 0.75);
+  -moz-box-shadow: 8px 30px 31px -16px rgba(92, 85, 85, 0.75);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.submitForm {
+  background-color: green;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  font-weight: 500;
+  border: 1px solid green;
+  border-radius: 15%;
+}
+
+.formButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.formButton button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(2, 131, 2, 0.6);
+  font-weight: 600;
+  color: white;
+  border: 1px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+.formButton button:hover {
+  background-color: rgb(2, 126, 2);
+  transform: scale(1.2);
+}

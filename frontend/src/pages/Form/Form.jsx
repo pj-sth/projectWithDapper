@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Result from "./Result";
-import AddStudentModal from "./AddStudentModal";
+import Result from "../Result/Result";
+import AddStudentModal from "../AddStudent/AddStudentModal";
 import { v4 as uuidv4 } from "uuid";
+import "./Form.css";
 
 const Form = () => {
   const [students, setStudents] = useState([]);
