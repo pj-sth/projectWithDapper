@@ -5,6 +5,7 @@ import "./Result.css";
 
 const Result = ({ studentList, setStudentList }) => {
   const [modal, setModal] = useState(false);
+  // const [cssClass, setCssClass] = useState("");
   const [selectedStudent, setSelectedStudent] = useState(null);
 
   const handleDelete = (id) => {
@@ -76,6 +77,7 @@ const Result = ({ studentList, setStudentList }) => {
           studentList={studentList}
           setStudentList={setStudentList}
           setModal={setModal}
+          // cssClass={cssClass}
         />
       )}
     </>

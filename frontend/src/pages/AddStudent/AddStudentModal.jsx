@@ -4,10 +4,11 @@ import { useFormik } from 'formik';
 import "./AddStudentModal.css";
 
 
-const AddStudentModal = () => {
+const AddStudentModal = ({ modal, setModal }) => {
 
     const [students, setStudents] = useState([]);
     const [subjects, setSubjects] = useState([]);
+
     
   
     useEffect(() => {
@@ -42,12 +43,20 @@ const AddStudentModal = () => {
         onSubmit
     })
 
+    const handleClose = () => {
+        setModal("close");
+    }
+
   return (
     <>
-        <div id="studentModal" className="addStudentModal open">
+        {/* <div id="studentModal" className={`addStudentModal ${modal ? "open" : "close"}`}> */}
+        <div id="studentModal" className={`addStudentModal ${modal}`}>
             <div className="addStudentModalContent">
                 <div className="form-container">
+                <div className="headers">
+                    <button className="closeBtn" onClick={handleClose}>X</button>
                     <h1>Student Subject</h1>
+                </div>
                     <div>
                         <form onSubmit={handleSubmit} className='studentSubjectForm' autoComplete='off'>
                             <div className="studentName">

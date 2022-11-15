@@ -14,7 +14,7 @@ const Form = () => {
   const [studentSubjects, setStudentSubjects] = useState([]);
   const [subjectList, setSubjectList] = useState([]);
   const [mark, setMark] = useState(null);
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState("");
   const [studentList, setStudentList] = useState([]);
   const [studentObj, setStudentObj] = useState({});
 
@@ -85,6 +85,10 @@ const Form = () => {
     }
   };
 
+  const handleModal = () => {
+    setModal("open");
+  }
+
   return (
     <>
       <h1>Test Results</h1>
@@ -92,7 +96,7 @@ const Form = () => {
         <div className="form-group">
           <div className="form-group-header">
             <label>Student Name:</label>
-            <button onClick={() => setModal(true)}>Add Student</button>
+            <button onClick={handleModal}>Add Student</button>
           </div>
           <select className="form-control" onChange={handleChange}>
             <option defaultValue>Default option</option>

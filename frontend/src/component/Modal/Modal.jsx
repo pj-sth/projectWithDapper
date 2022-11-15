@@ -95,10 +95,10 @@ const Modal = ({ student, studentList, setStudentList, setModal }) => {
     setModal(false);
   };
 
-
   return (
     <div className="formModal">
-      <div className="modalContent open">
+      <div className={`modalContent open`}>
+        {/* <button className="closeBtn" onClick={() => setModal(false)}>X</button> */}
         <h2>Edit content</h2>
         <div className="modalForm">
           <div className="modalFormContents">
@@ -126,7 +126,7 @@ const Modal = ({ student, studentList, setStudentList, setModal }) => {
             />
           </div>
         </div>
-        <button onClick={handleSubmit}>Submit</button>
+        <button className="submitBtn" onClick={handleSubmit}>Submit</button>
       </div>
     </div>
   );

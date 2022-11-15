@@ -79,3 +79,11 @@
     flex-direction: column;
     gap: 10px;
   }
+
+  .headers {
+    width: 100%;
+  }
+
+  .headers h1{
+    text-align: center;
+  }
